@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 1 - Estados de la petición AJAX</title>
+  <link rel="stylesheet" href="index.css">
+  
+</head>
+<body>
+  <header>
+    <form id="ajaxForm">
+      <label for="recurso">URL:</label>
+      <input type="text" id="recurso" size="70" placeholder="Ingresa la URL aquí..." value="">
+      <input type="button" id="enviar" value="Mostrar Contenidos">
+    </form>
+  </header>
+
+  <main class="container">
+    <section class="main-section">
+      <h2>Contenidos del archivo:</h2>
+      <div id="contenidos" class="response-box"></div>
+
+      <h2>Cabeceras HTTP de la respuesta del servidor:</h2>
+      <div id="cabeceras" class="response-box"></div>
+    </section>
+
+    <aside class="side-section">
+      <h2>Estados de la petición:</h2>
+      <div id="estados" class="response-box"></div>
+
+      <h2>Código de estado:</h2>
+      <div id="codigo" class="response-box"></div>
+    </aside>
+  </main>
+
+  <script src="index-ajax.js"></script>
+</body>
+</html>
